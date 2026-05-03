@@ -1,0 +1,55 @@
+project_slug: lenguaje_pantallas_18_36m
+title: "Exposicion temprana a pantallas y retraso del lenguaje expresivo"
+clinical_context: >
+  Consultorio de Nino Sano de un hospital. Durante controles de salud se observan
+  ninos de 18 a 36 meses con preocupacion familiar o profesional por retraso del
+  lenguaje expresivo y antecedente de uso frecuente de celulares, tablets o
+  television.
+question: >
+  En ninos de 18 a 36 meses que asisten al Consultorio de Nino Sano, que relacion
+  existe entre exposicion temprana o excesiva a dispositivos con pantallas y
+  retraso del lenguaje expresivo?
+population: "Ninos de 18 a 36 meses"
+exposure: "Uso temprano, prolongado o no acompanado de pantallas: celular, tablet, television"
+comparator: "Baja exposicion, uso acompanado o ausencia de pantallas"
+outcome: "Retraso del lenguaje expresivo o menor desempeno en lenguaje/comunicacion"
+setting: "Consultorio de Nino Sano, hospital publico, 2026"
+languages: ["English", "Spanish", "Portuguese"]
+year_from: 2016
+year_to: 2026
+max_records_per_source: 25
+sources: ["pubmed", "europepmc", "crossref"]
+provider: "none"
+model_name:
+embedding_provider: "none"
+embedding_model: "google/gemini-embedding-2-preview"
+embedding_top_k: 80
+embedding_batch_size: 64
+embedding_min_score:
+include_terms:
+  - screen time
+  - digital media
+  - mobile device
+  - smartphone
+  - tablet
+  - television
+  - language development
+  - expressive language
+  - language delay
+  - speech delay
+  - toddler
+  - young children
+exclude_terms:
+  - autism only
+  - adolescents
+  - school-age only
+  - intervention app
+inclusion_criteria:
+  - Children aged 0 to 5 years, prioritized if 12 to 36 months.
+  - Exposure includes screen time, mobile device, television, digital media, or similar.
+  - Outcome includes language, expressive language, speech delay, communication, or developmental screening.
+  - Peer-reviewed article, guideline, systematic review, cohort, or cross-sectional study.
+exclusion_criteria:
+  - Studies only in adolescents or school-age children without early-childhood subgroup.
+  - Studies only about autism treatment apps or assistive communication technology.
+  - Opinion pieces without methods, unless used only as contextual guideline.
